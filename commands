@@ -1,0 +1,8 @@
+commands
+
+#do it for each database seperately
+#default ncbi
+abricate --fofn fofn.txt >results.tab
+abricate --summary results.tab > summary.txt
+
+

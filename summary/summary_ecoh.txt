@@ -1,0 +1,3 @@
+#FILE	NUM_FOUND	fliC-H21	fliC-H28	wzx-O91	wzx-Onovel4	wzy-O91	wzy-Onovel4
+HV114-1.fa	3	.	100.00	100.00	.	100.00	.
+HV292.fa	3	100.00	.	.	100.00	.	100.00

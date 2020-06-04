@@ -1,0 +1,65 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+59161.fa	NODE_17_length_43941_cov_76.254400	9689	11191	-	eat(A)	1-1503/1503	===============	0/0	100.00	98.80	ncbi	NG_047762.1	ABC-F type ribosomal protection protein Eat(A)	PLEUROMUTILIN
+59161.fa	NODE_38_length_22043_cov_262.430848	5583	6278	+	vanR-A	1-696/696	===============	0/0	100.00	100.00	ncbi	NG_048399.1	VanA-type vancomycin resistance DNA-binding response regulator VanR	VANCOMYCIN
+59161.fa	NODE_38_length_22043_cov_262.430848	6256	7410	+	vanS-A	1-1155/1155	===============	0/0	100.00	100.00	ncbi	NG_048425.1	VanA-type vancomycin resistance histidine kinase VanS	VANCOMYCIN
+59161.fa	NODE_38_length_22043_cov_262.430848	7625	8593	+	vanH-A	1-969/969	===============	0/0	100.00	100.00	ncbi	NG_048372.1	D-lactate dehydrogenase VanH-A	VANCOMYCIN
+59161.fa	NODE_38_length_22043_cov_262.430848	8586	9617	+	vanA	1-1032/1032	===============	0/0	100.00	100.00	ncbi	NG_048323.1	D-alanine--(R)-lactate ligase VanA	VANCOMYCIN
+59161.fa	NODE_38_length_22043_cov_262.430848	9623	10231	+	vanX-A	1-609/609	===============	0/0	100.00	100.00	ncbi	NG_048477.1	D-Ala-D-Ala dipeptidase VanX-A	VANCOMYCIN
+59161.fa	NODE_38_length_22043_cov_262.430848	10659	11570	+	vanY-A	1-912/912	===============	0/0	100.00	100.00	ncbi	NG_048516.1	D-Ala-D-Ala carboxypeptidase VanY-A	VANCOMYCIN
+59161.fa	NODE_38_length_22043_cov_262.430848	11723	12208	+	vanZ-A	1-486/486	===============	0/0	100.00	100.00	ncbi	NG_048534.1	glycopeptide resistance protein VanZ-A	VANCOMYCIN
+59161.fa	NODE_43_length_19700_cov_92.558426	12901	14820	+	tet(M)	1-1920/1920	===============	0/0	100.00	99.95	ncbi	NG_048236.1	tetracycline resistance ribosomal protection protein Tet(M)	TETRACYCLINE
+59161.fa	NODE_64_length_12599_cov_72.960629	11743	12291	-	aac(6')-Ii	1-549/549	===============	0/0	100.00	99.64	ncbi	NG_047298.1	aminoglycoside N-acetyltransferase AAC(6')-Ii	AMINOGLYCOSIDE
+59162.fa	NODE_4_length_117803_cov_46.903301	37625	38173	-	aacA-ENT1	1-549/549	===============	0/0	100.00	100.00	ncbi	NG_052371.1	aminoglycoside 6'-N-acetyltransferase	AMINOGLYCOSIDE
+59162.fa	NODE_55_length_15241_cov_215.644025	2991	3476	-	vanZ-A	1-486/486	===============	0/0	100.00	100.00	ncbi	NG_048534.1	glycopeptide resistance protein VanZ-A	VANCOMYCIN
+59162.fa	NODE_55_length_15241_cov_215.644025	3629	4540	-	vanY-A	1-912/912	===============	0/0	100.00	99.89	ncbi	NG_048516.1	D-Ala-D-Ala carboxypeptidase VanY-A	VANCOMYCIN
+59162.fa	NODE_55_length_15241_cov_215.644025	4968	5576	-	vanX-A	1-609/609	===============	0/0	100.00	100.00	ncbi	NG_048476.1	D-Ala-D-Ala dipeptidase VanX-A	VANCOMYCIN
+59162.fa	NODE_55_length_15241_cov_215.644025	5582	6613	-	vanA	1-1032/1032	===============	0/0	100.00	99.90	ncbi	NG_048323.1	D-alanine--(R)-lactate ligase VanA	VANCOMYCIN
+59162.fa	NODE_55_length_15241_cov_215.644025	6606	7574	-	vanH-A	1-969/969	===============	0/0	100.00	100.00	ncbi	NG_048372.1	D-lactate dehydrogenase VanH-A	VANCOMYCIN
+59162.fa	NODE_55_length_15241_cov_215.644025	7789	8943	-	vanS-A	1-1155/1155	===============	0/0	100.00	100.00	ncbi	NG_048425.1	VanA-type vancomycin resistance histidine kinase VanS	VANCOMYCIN
+59162.fa	NODE_55_length_15241_cov_215.644025	8921	9616	-	vanR-A	1-696/696	===============	0/0	100.00	100.00	ncbi	NG_048399.1	VanA-type vancomycin resistance DNA-binding response regulator VanR	VANCOMYCIN
+59162.fa	NODE_5_length_107669_cov_48.709058	52504	54006	+	eat(A)	1-1503/1503	===============	0/0	100.00	100.00	ncbi	NG_047762.1	ABC-F type ribosomal protection protein Eat(A)	PLEUROMUTILIN
+59162.fa	NODE_60_length_11111_cov_173.971905	8550	9047	-	dfrG	1-498/498	===============	0/0	100.00	100.00	ncbi	NG_047756.1	trimethoprim-resistant dihydrofolate reductase DfrG	TRIMETHOPRIM
+59162.fa	NODE_79_length_6042_cov_176.556748	870	1664	-	aph(3')-IIIa	1-795/795	===============	0/0	100.00	100.00	ncbi	NG_047418.1	aminoglycoside O-phosphotransferase APH(3')-IIIa	AMIKACIN;KANAMYCIN
+59162.fa	NODE_79_length_6042_cov_176.556748	1757	2299	-	sat4	1-543/543	===============	0/0	100.00	100.00	ncbi	NG_048072.1	streptothricin N-acetyltransferase Sat4	STREPTOTHRICIN
+59162.fa	NODE_79_length_6042_cov_176.556748	2296	3204	-	ant(6)-Ia	1-909/909	===============	0/0	100.00	100.00	ncbi	NG_047393.1	aminoglycoside nucleotidyltransferase ANT(6)-Ia	STREPTOMYCIN
+59162.fa	NODE_8_length_96664_cov_55.674832	36713	38191	+	msr(C)	1-1479/1479	===============	0/0	100.00	98.99	ncbi	NG_048003.1	ABC-F type ribosomal protection protein Msr(C)	MACROLIDE
+59162.fa	NODE_98_length_2203_cov_194.915804	885	1622	+	erm(B)	1-738/738	===============	0/0	100.00	100.00	ncbi	NG_047802.1	23S rRNA (adenine(2058)-N(6))-methyltransferase Erm(B)	MACROLIDE
+59167.fa	NODE_13_length_46349_cov_52.799166	24900	26819	+	tet(M)	1-1920/1920	===============	0/0	100.00	99.95	ncbi	NG_048236.1	tetracycline resistance ribosomal protection protein Tet(M)	TETRACYCLINE
+59167.fa	NODE_31_length_27656_cov_70.969216	3450	4928	+	msr(C)	1-1479/1479	===============	0/0	100.00	98.65	ncbi	NG_048003.1	ABC-F type ribosomal protection protein Msr(C)	MACROLIDE
+59167.fa	NODE_34_length_26523_cov_58.506012	11767	12315	-	aac(6')-Ii	1-549/549	===============	0/0	100.00	99.82	ncbi	NG_047298.1	aminoglycoside N-acetyltransferase AAC(6')-Ii	AMINOGLYCOSIDE
+59167.fa	NODE_46_length_17203_cov_55.273152	9572	11074	-	eat(A)	1-1503/1503	===============	0/0	100.00	99.47	ncbi	NG_047762.1	ABC-F type ribosomal protection protein Eat(A)	PLEUROMUTILIN
+59167.fa	NODE_61_length_13126_cov_218.130968	5320	6015	+	vanR-A	1-696/696	===============	0/0	100.00	100.00	ncbi	NG_048399.1	VanA-type vancomycin resistance DNA-binding response regulator VanR	VANCOMYCIN
+59167.fa	NODE_61_length_13126_cov_218.130968	5993	7147	+	vanS-A	1-1155/1155	===============	0/0	100.00	100.00	ncbi	NG_048425.1	VanA-type vancomycin resistance histidine kinase VanS	VANCOMYCIN
+59167.fa	NODE_61_length_13126_cov_218.130968	7362	8330	+	vanH-A	1-969/969	===============	0/0	100.00	100.00	ncbi	NG_048372.1	D-lactate dehydrogenase VanH-A	VANCOMYCIN
+59167.fa	NODE_61_length_13126_cov_218.130968	8323	9354	+	vanA	1-1032/1032	===============	0/0	100.00	100.00	ncbi	NG_048323.1	D-alanine--(R)-lactate ligase VanA	VANCOMYCIN
+59167.fa	NODE_61_length_13126_cov_218.130968	9360	9968	+	vanX-A	1-609/609	===============	0/0	100.00	100.00	ncbi	NG_048477.1	D-Ala-D-Ala dipeptidase VanX-A	VANCOMYCIN
+59167.fa	NODE_61_length_13126_cov_218.130968	10396	11307	+	vanY-A	1-912/912	===============	0/0	100.00	100.00	ncbi	NG_048516.1	D-Ala-D-Ala carboxypeptidase VanY-A	VANCOMYCIN
+59167.fa	NODE_61_length_13126_cov_218.130968	11460	11945	+	vanZ-A	1-486/486	===============	0/0	100.00	100.00	ncbi	NG_048534.1	glycopeptide resistance protein VanZ-A	VANCOMYCIN
+59168.gbk	contig_13	11311	11859	+	aac(6')-Ii	1-549/549	===============	0/0	100.00	99.45	ncbi	NG_047298.1	aminoglycoside N-acetyltransferase AAC(6')-Ii	AMINOGLYCOSIDE
+59168.gbk	contig_17	29662	31164	+	eat(A)	1-1503/1503	===============	0/0	100.00	99.40	ncbi	NG_047762.1	ABC-F type ribosomal protection protein Eat(A)	PLEUROMUTILIN
+59168.gbk	contig_32	22452	24371	+	tet(M)	1-1920/1920	===============	0/0	100.00	99.74	ncbi	NG_048247.1	tetracycline resistance ribosomal protection protein Tet(M)	TETRACYCLINE
+59168.gbk	contig_40	5331	6026	+	vanR-A	1-696/696	===============	0/0	100.00	100.00	ncbi	NG_048399.1	VanA-type vancomycin resistance DNA-binding response regulator VanR	VANCOMYCIN
+59168.gbk	contig_40	6004	7158	+	vanS-A	1-1155/1155	===============	0/0	100.00	100.00	ncbi	NG_048425.1	VanA-type vancomycin resistance histidine kinase VanS	VANCOMYCIN
+59168.gbk	contig_40	7373	8341	+	vanH-A	1-969/969	===============	0/0	100.00	100.00	ncbi	NG_048372.1	D-lactate dehydrogenase VanH-A	VANCOMYCIN
+59168.gbk	contig_40	8334	9365	+	vanA	1-1032/1032	===============	0/0	100.00	100.00	ncbi	NG_048323.1	D-alanine--(R)-lactate ligase VanA	VANCOMYCIN
+59168.gbk	contig_40	9371	9979	+	vanX-A	1-609/609	===============	0/0	100.00	100.00	ncbi	NG_048477.1	D-Ala-D-Ala dipeptidase VanX-A	VANCOMYCIN
+59168.gbk	contig_40	10407	11318	+	vanY-A	1-912/912	===============	0/0	100.00	100.00	ncbi	NG_048516.1	D-Ala-D-Ala carboxypeptidase VanY-A	VANCOMYCIN
+59168.gbk	contig_40	11471	11956	+	vanZ-A	1-486/486	===============	0/0	100.00	100.00	ncbi	NG_048534.1	glycopeptide resistance protein VanZ-A	VANCOMYCIN
+59168.gbk	contig_5	80182	81660	-	msr(C)	1-1479/1479	===============	0/0	100.00	98.72	ncbi	NG_048003.1	ABC-F type ribosomal protection protein Msr(C)	MACROLIDE
+HV114-1.fa	NODE_29_length_61986_cov_52.655882	2323	3150	+	aph(3'')-Ib	1-828/828	===============	0/0	100.00	99.88	ncbi	NG_056002.2	aminoglycoside O-phosphotransferase APH(3'')-Ib	STREPTOMYCIN
+HV114-1.fa	NODE_29_length_61986_cov_52.655882	3150	3986	+	aph(6)-Id	1-837/837	===============	0/0	100.00	100.00	ncbi	NG_047464.1	aminoglycoside O-phosphotransferase APH(6)-Id	STREPTOMYCIN
+HV114-1.fa	NODE_35_length_51637_cov_62.778704	2377	3252	+	blaCTX-M-1	1-876/876	===============	0/0	100.00	100.00	ncbi	NG_048897.1	class A extended-spectrum beta-lactamase CTX-M-1	CEPHALOSPORIN
+HV114-1.fa	NODE_45_length_29916_cov_73.495090	20357	21172	-	sul2	1-816/816	===============	0/0	100.00	100.00	ncbi	NG_051852.1	sulfonamide-resistant dihydropteroate synthase Sul2	SULFONAMIDE
+HV114-1.fa	NODE_45_length_29916_cov_73.495090	23574	24362	-	aadA5	1-789/789	===============	0/0	100.00	100.00	ncbi	NG_047357.1	ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5	STREPTOMYCIN
+HV114-1.fa	NODE_45_length_29916_cov_73.495090	24493	24966	-	dfrA17	1-474/474	===============	0/0	100.00	99.79	ncbi	NG_047710.1	trimethoprim-resistant dihydrofolate reductase DfrA17	TRIMETHOPRIM
+HV114-1.fa	NODE_57_length_18846_cov_62.346369	13051	14184	+	blaEC-18	1-1134/1134	===============	0/0	100.00	99.91	ncbi	NG_049083.1	class C extended-spectrum beta-lactamase EC-18	CEPHALOSPORIN
+HV114-1.fa	NODE_70_length_6723_cov_45.316280	1365	2570	-	tet(B)	1-1206/1206	===============	0/0	100.00	100.00	ncbi	NG_048163.1	tetracycline efflux MFS transporter Tet(B)	TETRACYCLINE
+HV292.fa	contig00002	255632	256765	+	blaEC-18	1-1134/1134	===============	0/0	100.00	98.15	ncbi	NG_049083.1	class C extended-spectrum beta-lactamase EC-18	CEPHALOSPORIN
+HV292.fa	contig00025	30239	31054	-	sul2	1-816/816	===============	0/0	100.00	100.00	ncbi	NG_051852.1	sulfonamide-resistant dihydropteroate synthase Sul2	SULFONAMIDE
+HV292.fa	contig00025	33456	34244	-	aadA5	1-789/789	===============	0/0	100.00	100.00	ncbi	NG_047357.1	ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5	STREPTOMYCIN
+HV292.fa	contig00025	34375	34848	-	dfrA17	1-474/474	===============	0/0	100.00	99.79	ncbi	NG_047710.1	trimethoprim-resistant dihydrofolate reductase DfrA17	TRIMETHOPRIM
+HV292.fa	contig00025	60868	61743	-	blaCTX-M-1	1-876/876	===============	0/0	100.00	100.00	ncbi	NG_048897.1	class A extended-spectrum beta-lactamase CTX-M-1	CEPHALOSPORIN
+HV292.fa	contig00037	4740	5600	+	blaTEM-1	1-861/861	===============	0/0	100.00	100.00	ncbi	NG_050145.1	class A broad-spectrum beta-lactamase TEM-1	BETA-LACTAM
+HV292.fa	contig00037	14582	15787	+	tet(B)	1-1206/1206	===============	0/0	100.00	100.00	ncbi	NG_048163.1	tetracycline efflux MFS transporter Tet(B)	TETRACYCLINE
+HV292.fa	contig00037	20461	21288	+	aph(3'')-Ib	1-828/828	===============	0/0	100.00	99.88	ncbi	NG_056002.2	aminoglycoside O-phosphotransferase APH(3'')-Ib	STREPTOMYCIN
+HV292.fa	contig00037	21288	22124	+	aph(6)-Id	1-837/837	===============	0/0	100.00	100.00	ncbi	NG_047464.1	aminoglycoside O-phosphotransferase APH(6)-Id	STREPTOMYCIN
