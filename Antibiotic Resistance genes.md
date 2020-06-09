@@ -1,15 +1,3 @@
----
-title: "Workflow"
-author: "Moritz Herrmann"
-date: "5/20/2020"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-knitr::opts_chunk$set(eval = FALSE)
-```
-
 # Antibiotic Resistance genes
 Mass screening of contigs for antimicrobial resistance or virulence genes with bioinformatic tool **abricate** by Seemann T. In total 4 different databases for ab resistance genes were screened.
 
@@ -46,6 +34,5 @@ Manually screened in excel file, grouped by antibiotic classes and finally conve
 
 ## Database comparison
 Database comparison showed different number of ab genes present 
-![](result_databases_coli.png)
-![](result_databases_faecis.png)
-## 
+![](/Users/moritzherrmann/Projects/Antibiotic_resistance/R_files/result_databases_coli2.png)
+![](/Users/moritzherrmann/Projects/Antibiotic_resistance/R_files/result_databases_faecis2.png)
