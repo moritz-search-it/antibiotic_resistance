@@ -34,5 +34,6 @@ Manually screened in excel file, grouped by antibiotic classes and finally conve
 
 ## Database comparison
 Database comparison showed different number of ab genes present 
-![](/Users/moritzherrmann/Projects/Antibiotic_resistance/R_files/result_databases_coli2.png)
-![](/Users/moritzherrmann/Projects/Antibiotic_resistance/R_files/result_databases_faecis2.png)
+![](https://github.com/moritz-search-it/antibiotic_resistance/blob/master/R_files/result_databases_faecis.png)
+
+![](https://github.com/moritz-search-it/antibiotic_resistance/blob/master/R_files/result_databases_coli.png)
