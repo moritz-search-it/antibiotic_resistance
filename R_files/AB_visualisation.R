@@ -122,11 +122,14 @@ beta_lactam <- c("acrB","acrE","acrF","acrS","CRP","CTX.M.1","Escherichia_coli_a
 broad_spectrum <- c("SAT.4","acrB","acrS","Escherichia_coli_acrA","Escherichia_coli_mdfA","marA","mdtM","mdtN","mdtO","mdtP","msrC","tolC")
 Protein_synthese_inhibitor <- c("CRP","efmA","ErmB","Escherichia_coli_emrE","evgA","evgS","gadW","gadX","H.NS","mdtE","mdtF","mdtM","mphB","msrC","tolC")
 Diaminopyrimidine <- c("dfrG","dfrA17")
+multiple_resistances <- c("acrB","acrS","Escherichia_coli_acrA","evgA","evgS","H-NS","marA","msrC","tolC","baeR","baeS","cpxA","acrE","acrF","efmA","gadW","gadX","mdtE","mdtF","CRP","mdtM")
 
 
 annotation <- function(faecis_tidy,...){
 for (i in 1:length(faecis_tidy$resistance_gene)){
-  if(faecis_tidy$resistance_gene[i] %in% Aminoglycosides ){
+  if(faecis_tidy$resistance_gene[i] %in% multiple_resistances){
+    faecis_tidy$group[i] <- "multiple resistances"
+  } else if(faecis_tidy$resistance_gene[i] %in% Aminoglycosides ){
     faecis_tidy$group[i] <- "Aminoglycosides" 
   } else if (faecis_tidy$resistance_gene[i] %in% Glycopeptide){
       faecis_tidy$group[i] <- "Glycopeptide"
@@ -157,11 +160,34 @@ for (i in 1:length(faecis_tidy$resistance_gene)){
   return(faecis_tidy)
 }
 ## problem, when gene is active against multiple groups of antibiotic? Bcs if-else loop jumps to next i-entry when test expression is = TRUE
-##Possible solution: (example aminoglycosides)
-          #n <- "Aminoglycosides"
-          #faecis_tidy$group[i] <- "paste(faecis_tidy$group[i],n") but problem of if-else loop still appears
 
+#problem solved with new group: multiple resistances
+#possible solution with inner_join, see: https://r4ds.had.co.nz/relational-data.html 13.4 Mutating joins
 
 faecis_tidy <- annotation(faecis_tidy)
 coli_tidy <- annotation(coli_tidy)
-coli_tidy
+print(coli_tidy,n=20)
+print(faecis_tidy,n=20)
+
+summary(faecis_tidy)
+
+counting <- function(faecis_tidy){
+x <- count(faecis_tidy,presence == TRUE,wt_var = strain,group)
+for(i in 1:length(x$`presence == TRUE`))
+  if(x[i,1] == FALSE){
+    x[i,4] <- 0
+    } else (x[i,4] == x$n)
+x
+tst <- ggplot(data=x,mapping= aes(wt_var,group))
+tst + geom_tile(aes(fill=n)) +
+  xlab(label= "strains") +
+  ylab(label= "Antibiotic resistance") +
+  scale_fill_gradient(name= "nr. resistance genes",
+                      low = "#FFFFFF", high = "#012345") +
+  ggtitle(label = "Screening for antibiotic resistance genes") +
+  theme_bw()
+
+}
+counting(faecis_tidy)
+counting(coli_tidy)
+

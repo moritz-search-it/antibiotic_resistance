@@ -31,9 +31,19 @@ Manually screened in excel file, grouped by antibiotic classes and finally conve
 * $\beta$-lactam antibiotic
 * Broad-spectrum antimicrobial activity
 * Protein-synthese inhibitor antibiotic
+* multiple antibiotic resistances
 
 ## Database comparison
 Database comparison showed different number of ab genes present 
+
 ![](https://github.com/moritz-search-it/antibiotic_resistance/blob/master/R_files/result_databases_faecis.png)
 
+In _enterococcus faecis_, similar results are obtained from different databases. Manual comparasion revealed no new genes between CARD, ARGANNOT, NCBI and Resfinder. Only different names (_eat(A)_, _ant6_ in NCBI and _efm(A)_, _aad6_ in CARD)
+
 ![](https://github.com/moritz-search-it/antibiotic_resistance/blob/master/R_files/result_databases_coli.png)
+
+Since CARD has also found more entries in e.coli, CARD resistance database is used for further exploration
+
+CARD is a curated collection of characterized, peer-reviewed resistance genes and associated antibiotics and is updated monthly.
+
+## Screening of antibiotic genes
