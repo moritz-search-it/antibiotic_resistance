@@ -47,3 +47,4 @@ Since CARD has also found more entries in e.coli, CARD resistance database is us
 CARD is a curated collection of characterized, peer-reviewed resistance genes and associated antibiotics and is updated monthly.
 
 ## Screening of antibiotic genes
+
