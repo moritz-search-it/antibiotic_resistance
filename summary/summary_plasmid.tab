@@ -1,0 +1,5 @@
+#FILE	NUM_FOUND	(AGly)aadA5	(Bla)blaCTX-M-1	(Sul)sul2	(Tmt)dfrA17	CTX-M-1	aadA5	aadA5_1	blaCTX-M-1	blaCTX-M-1_1	dfrA17	dfrA17_1	sul2	sul2_11
+results_argannot.tab	4	100.00	100.00	99.88	100.00	.	.	.	.	.	.	.	.	.
+results_card.tab	4	.	.	.	.	100.00	100.00	.	.	.	100.00	.	99.88	.
+results_ncbi.tab	4	.	.	.	.	.	100.00	.	100.00	.	100.00	.	99.88	.
+results_resfinder.tab	4	.	.	.	.	.	.	100.00	.	100.00	.	100.00	.	99.88
