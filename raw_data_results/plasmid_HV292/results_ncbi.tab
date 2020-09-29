@@ -1,0 +1,5 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	12124	12597	+	dfrA17	1-474/474	===============	0/0	100.00	99.79	ncbi	NG_047710.1	trimethoprim-resistant dihydrofolate reductase DfrA17	TRIMETHOPRIM
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	12728	13516	+	aadA5	1-789/789	===============	0/0	100.00	100.00	ncbi	NG_047357.1	ANT(3'')-Ia family aminoglycoside nucleotidyltransferase AadA5	STREPTOMYCIN
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	15917	16731	+	sul2	1-816/816	========/======	1/1	99.88	99.88	ncbi	NG_051852.1	sulfonamide-resistant dihydropteroate synthase Sul2	SULFONAMIDE
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	98932	99807	+	blaCTX-M-1	1-876/876	===============	0/0	100.00	100.00	ncbi	NG_048897.1	class A extended-spectrum beta-lactamase CTX-M-1	CEPHALOSPORIN

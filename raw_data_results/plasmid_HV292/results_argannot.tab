@@ -1,0 +1,5 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	12124	12597	+	(Tmt)dfrA17	1-474/474	===============	0/0	100.00	100.00	argannot	AB126604:98-571	(Tmt)dfrA17	
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	12728	13516	+	(AGly)aadA5	1-789/789	===============	0/0	100.00	100.00	argannot	AF137361:64-852	(AGly)aadA5	
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	15917	16731	+	(Sul)sul2	1-816/816	========/======	1/1	99.88	99.88	argannot	EU360945:1617-2432	(Sul)sul2	
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	98932	99807	+	(Bla)blaCTX-M-1	1-876/876	===============	0/0	100.00	100.00	argannot	X92506:63-938	(Bla)blaCTX-M-1	

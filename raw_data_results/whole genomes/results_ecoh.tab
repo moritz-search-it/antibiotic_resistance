@@ -1,0 +1,7 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+HV114-1.fa	NODE_11_length_121382_cov_42.863617	62966	64231	+	wzx-O91	1-1266/1266	===============	0/0	100.00	100.00	ecoh	AY035396.1	O antigen flippase O91	
+HV114-1.fa	NODE_11_length_121382_cov_42.863617	67021	68232	+	wzy-O91	1-1212/1212	===============	0/0	100.00	99.92	ecoh	AY035396.1	O antigen polyermase O91	
+HV114-1.fa	NODE_26_length_66901_cov_38.997007	6968	8707	+	fliC-H28	1-1740/1740	===============	0/0	100.00	98.74	ecoh	AY250010.1	flagellin H28	
+HV292.fa	contig00001	750	1997	-	wzx-Onovel4	1-1248/1248	===============	0/0	100.00	100.00	ecoh	SRR2085677	O antigen flippase Onovel4	
+HV292.fa	contig00015	1147	2463	+	wzy-Onovel4	1-1317/1317	===============	0/0	100.00	99.92	ecoh	SRR2085677	O antigen polyermase Onovel4	
+HV292.fa	contig00019	81393	82772	-	fliC-H21	1-1380/1380	===============	0/0	100.00	100.00	ecoh	AY250004.1	flagellin H21	

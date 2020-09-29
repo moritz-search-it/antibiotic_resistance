@@ -1,0 +1,5 @@
+#FILE	SEQUENCE	START	END	STRAND	GENE	COVERAGE	COVERAGE_MAP	GAPS	%COVERAGE	%IDENTITY	DATABASE	ACCESSION	PRODUCT	RESISTANCE
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	12124	12597	+	dfrA17_1	1-474/474	===============	0/0	100.00	100.00	resfinder	FJ460238	dfrA17	Trimethoprim
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	12728	13516	+	aadA5_1	1-789/789	===============	0/0	100.00	100.00	resfinder	AF137361	aadA5	Streptomycin
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	15917	16731	+	sul2_11	1-816/816	========/======	1/1	99.88	99.88	resfinder	AY232670	sul2	Sulfamethoxazole
+/Users/moritzherrmann/Projects/annotated_strains/E_coli/HV292_plasmid.fna	KM377239.1	98932	99807	+	blaCTX-M-1_1	1-876/876	===============	0/0	100.00	100.00	resfinder	DQ915955	blaCTX-M-1	Amoxicillin;Ampicillin;Aztreonam;Cefepime;Cefotaxime;Ceftazidime;Ceftriaxone;Piperacillin;Ticarcillin
