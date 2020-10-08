@@ -2,6 +2,7 @@
 library(tidyverse)
 library(reshape2)
 load("visualisation.RData")
+
 #we use card, The CARD is a rigorously curated collection of characterized, peer-reviewed resistance determinants 
 #and associated antibiotics, organized by the Antibiotic Resistance Ontology (ARO) and AMR gene detection models.
 card_faecis$strain <- names_faecis
@@ -14,6 +15,7 @@ coli_tidy <- melt(card_coli) %>%
 
 faecis_tidy$group <- NA
 coli_tidy$group <- NA
+
 
 ##add antibiotic groups
 Aminoglycosides <- c("aad.6.","aadA5","acrD","AAC.6...Ii","APH.3....Ib","APH.3...IIIa","APH.6..Id","baeR","baeS","cpxA","kdpE","tolC")

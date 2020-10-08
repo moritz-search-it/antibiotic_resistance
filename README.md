@@ -41,13 +41,15 @@ finally converted to csv and imported into R studio.
 Database comparison
 -------------------
 
-![](result_databases_coli.png) ![](result_databases_faecis.png) &gt; So
-called hypothetical ab genes are handled differently dependent on the
-database in use
+![](result_databases_coli.png) ![](result_databases_faecis.png)
+
+> So called hypothetical ab genes are handled differently dependent on
+> the database in use
 
 Annotation of specific ab genes
 -------------------------------
 
-![](result_abscreening_coli.png) ![](result_abscreening_faecis.png) &gt;
-clustering of glycopeptide resistance in e.coli strains , whereas
-E.faecium has a higher range of antibiotic resitances.
+![](result_abscreening_coli.png) ![](result_abscreening_faecis.png)
+
+> clustering of glycopeptide resistance in e.coli strains , whereas
+> E.faecium has a higher range of antibiotic resitances.

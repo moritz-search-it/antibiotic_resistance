@@ -50,10 +50,12 @@ Manually screened in excel file, grouped by antibiotic classes and finally conve
 
 ![](result_databases_coli.png)
 ![](result_databases_faecis.png)
+
 > So called hypothetical ab genes are handled differently dependent on the database in use
 
 ## Annotation of specific ab genes
 
 ![](result_abscreening_coli.png)
 ![](result_abscreening_faecis.png)
+
 > clustering of glycopeptide resistance in e.coli strains , whereas E.faecium has a higher range of antibiotic resitances.
