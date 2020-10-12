@@ -105,8 +105,6 @@ pivot_longer(c(-"strain"),names_to = "resistance_gene", values_to= "presence")
 coli_tidy <- melt(card_coli) %>% 
   pivot_longer(c(-"strain"),names_to = "resistance_gene", values_to= "presence")
 
-faecis_tidy$group <- NA
-coli_tidy$group <- NA
 
 ##add antibiotic groups
 Aminoglycosides <- c("aad.6.","aadA5","acrD","AAC.6...Ii","APH.3....Ib","APH.3...IIIa","APH.6..Id","baeR","baeS","cpxA","kdpE","tolC")
@@ -119,74 +117,147 @@ beta_lactam <- c("acrB","acrE","acrF","acrS","CRP","CTX.M.1","Escherichia_coli_a
 broad_spectrum <- c("SAT.4","acrB","acrS","Escherichia_coli_acrA","Escherichia_coli_mdfA","marA","mdtM","mdtN","mdtO","mdtP","msrC","tolC")
 Protein_synthese_inhibitor <- c("CRP","efmA","ErmB","Escherichia_coli_emrE","evgA","evgS","gadW","gadX","H.NS","mdtE","mdtF","mdtM","mphB","msrC","tolC")
 Diaminopyrimidine <- c("dfrG","dfrA17")
-multiple_resistances <- c("acrB","acrS","Escherichia_coli_acrA","evgA","evgS","H-NS","marA","msrC","tolC","baeR","baeS","cpxA","acrE","acrF","efmA","gadW","gadX","mdtE","mdtF","CRP","mdtM")
 
-
-annotation <- function(faecis_tidy,...){
-for (i in 1:length(faecis_tidy$resistance_gene)){
-  if(faecis_tidy$resistance_gene[i] %in% multiple_resistances){
-    faecis_tidy$group[i] <- "multiple resistances"
-  } else if(faecis_tidy$resistance_gene[i] %in% Aminoglycosides ){
-    faecis_tidy$group[i] <- "Aminoglycosides" 
-  } else if (faecis_tidy$resistance_gene[i] %in% Glycopeptide){
-      faecis_tidy$group[i] <- "Glycopeptide"
-  } else if (faecis_tidy$resistance_gene[i] %in% Tetracycline){
-        faecis_tidy$group[i] <- "Tetracycline"
-  } else if (faecis_tidy$resistance_gene[i] %in% Aminocoumarin){
-          faecis_tidy$group[i] <- "Aminocoumarin"
-  } else if (faecis_tidy$resistance_gene[i] == "mdtG"){
-            faecis_tidy$group[i] <-"Fosfomycin"
-  } else if (faecis_tidy$resistance_gene[i] == "msbA"){
-              faecis_tidy$group[i] <- "Nitroimidazole"
-  } else if (faecis_tidy$resistance_gene[i] == "sul2"){
-                faecis_tidy$group[i] <- "Sulfonamide"
-  } else if (faecis_tidy$resistance_gene[i] %in% Diaminopyrimidine ){
-                  faecis_tidy$group[i] <- "Diaminopyrimidine"  
-  } else if (faecis_tidy$resistance_gene[i] %in% Polypeptide_ab){
-                  faecis_tidy$group[i] <- "Polypeptide_ab"
-  } else if (faecis_tidy$resistance_gene[i] %in% Fluoroquinolone){
-                    faecis_tidy$group[i] <- "Fluoroquinolone"
-  } else if (faecis_tidy$resistance_gene[i] %in% beta_lactam){
-                      faecis_tidy$group[i] <- "Beta_lactame"
-  } else if (faecis_tidy$resistance_gene[i] %in% broad_spectrum){
-                        faecis_tidy$group[i] <- "Broad_spectrum_ab"
-  } else if (faecis_tidy$resistance_gene[i] %in% Protein_synthese_inhibitor){
-                          faecis_tidy$group[i] <- "Protein_synthese_inhibitor_ab"
-   } 
+annotation<-function(tidy_data){
+  
+  #create an empty vector of lists where we will store each abgene's annotation
+  groups <- vector("list",length=nrow(tidy_data))
+  
+  
+  for (i in 1:nrow(tidy_data)){
+    
+    #empty vector to store each abgene's annotation
+    anno <- c()
+    
+    
+    #creating the annotation for each abgene
+    if(tidy_data$resistance_gene[i] %in% Aminoglycosides ){
+      anno <- c(anno,"Aminoglycosides") 
+    } 
+    if (tidy_data$resistance_gene[i] %in% Glycopeptide){
+      anno <- c(anno,"Glycopeptide")
+    } 
+    if (tidy_data$resistance_gene[i] %in% Tetracycline){
+      anno <- c(anno,"Tetracycline")
+    } 
+    if (tidy_data$resistance_gene[i] %in% Aminocoumarin){
+      anno <- c(anno,"Aminocoumarin")
+    } 
+    if (tidy_data$resistance_gene[i] == "mdtG"){
+      anno <-c(anno,"Fosfomycin")
+    } 
+    if (tidy_data$resistance_gene[i] == "msbA"){
+      anno <- c(anno,"Nitroimidazole")
+    } 
+    if (tidy_data$resistance_gene[i] == "sul2"){
+      anno <- c(anno,"Sulfonamide")
+    } 
+    if (tidy_data$resistance_gene[i] %in% Diaminopyrimidine ){
+      anno <- c(anno,"Diaminopyrimidine")  
+    } 
+    if (tidy_data$resistance_gene[i] %in% Polypeptide_ab){
+      anno <- c(anno,"Polypeptide_ab")
+    } 
+    if (tidy_data$resistance_gene[i] %in% Fluoroquinolone){
+      anno <- c(anno,"Fluoroquinolone")
+    }
+    if (tidy_data$resistance_gene[i] %in% beta_lactam){
+      anno <- c(anno,"Beta_lactame")
+    }
+    if (tidy_data$resistance_gene[i] %in% broad_spectrum){
+      anno <- c(anno,"Broad_spectrum_ab")
+    } 
+    if (tidy_data$resistance_gene[i] %in% Protein_synthese_inhibitor){
+      anno <- c(anno,"Protein_synthese_inhibitor_ab")
+    } 
+    
+    #storing the annotation 
+    groups[[i]] <- anno
+    
+  }
+  
+  #return the annotated dataset
+  return(tidy_data %>% mutate(Group =groups))
 }
-  return(faecis_tidy)
-}
-## problem, when gene is active against multiple groups of antibiotic? Bcs if-else loop jumps to next i-entry when test expression is = TRUE
-
-#problem solved with new group: multiple resistances
-#cant we use inner join to get unique combination of ab genes?
 
 faecis_tidy <- annotation(faecis_tidy)
 coli_tidy <- annotation(coli_tidy)
 print(coli_tidy,n=20)
 print(faecis_tidy,n=20)
 
-summary(faecis_tidy)
+faecis_tidy %>% filter(presence==TRUE) %>% filter(strain=="59161") %>% 
 
-counting <- function(faecis_tidy){
-x <- count(faecis_tidy,presence == TRUE,wt_var = strain,group)
-for(i in 1:length(x$`presence == TRUE`))
-  if(x[i,1] == FALSE){
-    x[i,4] <- 0
-    } else (x[i,4] == x$n)
-x
-tst <- ggplot(data=x,mapping= aes(wt_var,group))
-tst + geom_tile(aes(fill=n)) +
-  xlab(label= "strains") +
+colnames(tibble1[-1])
+faecis_tidy %>% filter(presence==TRUE) %>%  filter(strain=="59161") %>% summarise(resistance=Group) %>%
+  flatten %>% rapply(as.vector) %>% str_count("Fluoroquinolone") %>% sum() #change str_count()
+
+
+
+tibble1 <- tibble( strain = c("59161","59162","59167","59168"),
+        Aminocoumarin= c(0,0,0,0),
+        Aminoglycosides = c(1,3,1,1),
+        beta_lactam = c(0,0,0,0),
+        broad_spectrum = c(0,2,1,1),
+        Diaminopyrimidine = c(0,1,0,0),
+        Fluoroquinolone=c(1,1,1,1),
+        Fosfomycin=c(0,0,0,0),
+        Glycopeptide=c(7,7,7,7),
+        Nitroimidazole=c(0,0,0,0),
+        Polypeptide= c(0,0,0,0),
+        Protein_synthese_inhibitor = c(1,2,2,2),
+        Sulfonamide= c(0,0,0,0),
+        Tetracycline=c(1,1,2,2))
+
+#tibble1 %>% melt %>% 
+ # ggplot(aes(variable,value, group =strain)) +
+  #geom_col(aes(fill=strain),position="dodge") + coord_flip() + labs( x = "resistance", y= "nr of genes")
+
+
+tibble1 %>% melt %>% 
+  ggplot(aes(strain,variable,fill=value)) +
+  geom_tile() + xlab(label= "strains") +
   ylab(label= "Antibiotic resistance") +
   scale_fill_gradient(name= "nr. resistance genes",
                       low = "#FFFFFF", high = "#012345") +
-  ggtitle(label = "Screening for antibiotic resistance genes") +
+  ggtitle(label = "Screening for antibiotic resistance genes",subtitle = "Vancomycin resistant enteroccoci (VRE)") +
   theme_bw()
 
-}
-counting(faecis_tidy)
-ggsave(path= "/Users/moritzherrmann/Projects/Antibiotic_resistance/","result_abscreening_faecis.png",width = 6, height = 5)
-counting(coli_tidy)
-ggsave(path= "/Users/moritzherrmann/Projects/Antibiotic_resistance/", "result_abscreening_coli.png",width = 6, height = 5)
+ggsave("endscreening_ab_faecis.png", width=6,height = 5)
 
+#could be good to do a function to go through all antibiotic groups
+coli_tidy %>% filter(presence==TRUE) %>%  filter(strain=="HV114-1") %>% summarise(resistance=Group) %>%
+  flatten %>% rapply(as.vector) %>% str_count("Fluoroquinolone") %>% sum() #change str_count()
+coli_tidy %>% filter(presence==TRUE) %>%  filter(strain=="HV292") %>% summarise(resistance=Group) %>%
+  flatten %>% rapply(as.vector) %>% str_count("Fluoroquinolone") %>% sum()
+
+tibble2 <- tibble( strain = c("HV114-1","HV292-1"),
+                   Aminocoumarin= c(7,7),
+                   Aminoglycosides = c(8,8),
+                   beta_lactam = c(19,20),
+                   broad_spectrum = c(10,10),
+                   Diaminopyrimidine = c(1,1),
+                   Fluoroquinolone=c(19,19),
+                   Fosfomycin=c(1,1),
+                   Glycopeptide=c(0,0),
+                   Nitroimidazole=c(1,1),
+                   Polypeptide= c(3,4),
+                   Protein_synthese_inhibitor = c(12,12),
+                   Sulfonamide= c(1,1),
+                   Tetracycline=c(11,11)
+                   )
+
+tibble2 %>% melt %>% 
+  ggplot(aes(strain,variable,fill=value)) +
+  geom_tile() + xlab(label= "strains") +
+  ylab(label= "Antibiotic resistance") +
+  scale_fill_gradient(name= "nr. resistance genes",
+                      low = "#FFFFFF", high = "#012345") +
+  ggtitle(label = "Screening for antibiotic resistance genes",subtitle = "Extended-spectrum-betalactamase") +
+  theme_bw()
+ggsave("endscreening_ab_coli.png", width=6,height = 5)
+
+
+
+tibble2 %>% melt %>% 
+  ggplot(aes(strain,variable,size=value))+
+  geom_count() + scale_size_area() +scale_size(range = c(0,10))

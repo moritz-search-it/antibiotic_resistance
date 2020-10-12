@@ -49,7 +49,7 @@ Database comparison
 Annotation of specific ab genes
 -------------------------------
 
-![](result_abscreening_coli.png) ![](result_abscreening_faecis.png)
+![](endscreening_ab_coli.png) ![](endscreening_ab_faecis.png)
 
 > clustering of glycopeptide resistance in e.coli strains , whereas
 > E.faecium has a higher range of antibiotic resitances.
