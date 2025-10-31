@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_chunk$set(eval = FALSE)
 ```
 
-# Antibiotic Resistance genes
+# Antibiotic Resistance genes 
 Mass screening of contigs for antimicrobial resistance or virulence genes with bioinformatic tool **abricate** by Seemann T. In total 4 different databases for ab resistance genes were screened.
 
 * Abricate, Github <https://github.com/tseemann/abricate>
